@@ -28,6 +28,7 @@ Criteria queries on JSON objects Mongo style [json-criteria](https://github.com/
 # API
 
 ```javascript
+  //SUPPORT ASYNC/AWAIT or Callback
   var JSONDBFSDriver = require('jsondbfs');
   var database;
 
@@ -86,6 +87,10 @@ Criteria queries on JSON objects Mongo style [json-criteria](https://github.com/
     // returns true if records were removed
     ...
   });
+
+  await database.Users.updateOne({name: 'Manual'},{age: 30})
+
+  ... updateMany, deleteOne, deleteMany same mongoose (MONGODB)
 ```
 
 Support for [Query and Projection Operators](https://docs.mongodb.org/manual/reference/operator/query/):
