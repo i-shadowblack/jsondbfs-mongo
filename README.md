@@ -29,7 +29,7 @@ Criteria queries on JSON objects Mongo style [json-criteria](https://github.com/
 
 ```javascript
   //SUPPORT ASYNC/AWAIT or Callback
-  var JSONDBFSDriver = require('jsondbfs');
+  var JSONDBFSDriver = require('jsondbfs-mongo');
   var database;
 
   // receives an array containing the collections you want to create / use ['Users', 'Others']
@@ -124,7 +124,7 @@ Support provided using [json-criteria](https://github.com/mirek/node-json-criter
 
 ```javascript
 // Driver options
-var JSONDBFSDriver = require('jsondbfs');
+var JSONDBFSDriver = require('jsondbfs-mongo');
 var database;
 
 // driver options
@@ -172,8 +172,6 @@ When removing or finding you can pass 1 option:
 ```bash
 options.multi - Should update multiple records if they match. Accepts a boolean 'true' or 'false'. Defaults to 'true'.
 ```
-
-Please check the [tests](https://github.com/mcmartins/jsondbfs/tree/master/test) for more details.
 
 # License
 
